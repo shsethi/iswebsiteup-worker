@@ -11,4 +11,4 @@ URL_TO_CHECK = 'https://pcdapension.nic.in/'
 # Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
 # Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
 [triggers]
-crons = ["*/15 * * * *"] # * * * * * = run every 15 minute
+crons = ["*/30 2-16 * * *"] # * * * * * = run every 30 minute, except 2-16 UTC
