@@ -4,6 +4,8 @@ compatibility_date = "2023-10-30"
 
 [vars]
 URL_TO_CHECK = 'https://pcdapension.nic.in/'
+# BOT_TOKEN='telegram bot token'
+# CHAT_ID='your telegram chat id'
 
 # Cron Triggers
 # Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
