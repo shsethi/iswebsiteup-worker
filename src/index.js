@@ -56,19 +56,21 @@ async function sendMessageConditionally(url, success) {
 		console.log('url is undefined');
 		return;
 	}
-	if (!success) {
-		const msg = `${url} is not responding.`;
-		// if current time is multiple of 5
-		if (new Date().getMinutes() % 5 === 0) {
-			await sendAlertToTelegram(msg);
-		} else {
-			console.log('not sending ' + msg);
-		}
-	}
-	else {
+	if (success) {
+
 		const msg = `${url} is responding successfully!`;
 		await sendAlertToTelegram(msg);
+	
 	}
+	// else {
+	// 	const msg = `${url} is not responding.`;
+	// 	// if current time is multiple of 5
+	// 	if (new Date().getHours() % 3 === 0) {
+	// 		await sendAlertToTelegram(msg);
+	// 	} else {
+	// 		console.log('not sending ' + msg);
+	// 	}
+	// }
 	
 }
 
